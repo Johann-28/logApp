@@ -1,0 +1,40 @@
+<br> <br> <br> <br>
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Hello CDIS.</h1>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Register</h5>
+		<p>Have already an account? <a routerLink="/auth/login">Login now</a> it takes less than a minute</p>
+		
+        <div>
+            <form [formGroup] = "formularioReg" (ngSubmit)="register()"> 
+                
+                
+                <div class="form-field"> 
+                    <input placeholder ="Username" formControlName = "usname" required>
+                </div>
+
+                
+                <div class="form-field"> 
+                    <input placeholder ="ID" formControlName = "id" required>
+                </div>
+
+                <div class="form-field">
+                    <input type="password" placeholder ="password" formControlName = "pass" required>
+                </div>
+
+                <br><br><br>
+              
+                <div class="form-field">
+                    <button type="submit" style="margin-right: 10px;">Register</button>
+                </div>
+
+            </form>
+		</div>    
+	</div>
+</div>

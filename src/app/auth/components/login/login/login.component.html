@@ -1,0 +1,46 @@
+<!-- partial:index.partial.html -->
+<br> <br> <br> <br>
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Hello CDIS.</h1>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Login</h5>
+		<p>Don't have an account? <a routerLink="/auth/register">Create Your Account</a> it takes less than a minute</p>
+		
+        <div>
+            <form [formGroup] = "formularioLog" (ngSubmit)="login()">
+                <div class="form-field"> 
+                    <input placeholder ="ID" formControlName = "id" required>
+                </div>
+
+                <div class="form-field">
+                    <input type="password" placeholder ="password" formControlName = "pass" required>
+                </div>
+
+                <br><br><br>
+              
+                <div class="form-field">
+                    <button type="submit" style="margin-right: 10px;">Login</button>
+                </div>
+                
+                
+
+            </form>
+			
+           
+
+		</div>
+			
+		
+
+           
+	</div>
+	
+</div>
+<!-- partial -->
+
